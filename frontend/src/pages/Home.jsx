@@ -55,7 +55,7 @@ const Home = () => {
           <h1 className="max-w-4xl font-[font3] text-4xl font-semibold leading-[1.05] tracking-[0.08em] text-white/95 md:text-5xl md:tracking-[0.12em] lg:text-[64px]">
             I turn coffee and code
             <br className='hidden md:block' />
-            into stunning <span className='bg-linear-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent'>web apps.</span>
+            &nbsp;into stunning <span className='bg-linear-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent'>web apps.</span>
           </h1>
           <div className='flex flex-wrap items-center justify-center gap-3 font-[font2] text-base uppercase text-white/75 md:text-lg lg:text-2xl'>
             <span className='text-white'>Hello, I'm Henil Patel</span>

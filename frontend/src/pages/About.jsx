@@ -67,7 +67,7 @@ const About = () => {
             cardDistance={90}
             verticalDistance={80}
             delay={3000}
-            pauseOnHover
+            pauseOnHover={false}
             className='lg:translate-x-6'
           >
             {details.map(({ label, image }) => (
