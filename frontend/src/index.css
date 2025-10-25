@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: font1;
+  src: url(./assets/fonts/7b0b24f36b1a6d0b-s.p.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: font2;
+  src: url(./assets/fonts/81f255edf7f746ee-s.p.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: font3;
+  src: url(./assets/fonts/9cc5b37ab1350db7-s.p.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: font4;
+  src: url(./assets/fonts/e6099e249fd938cc-s.p.woff2);
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: white;
+  overflow-x: hidden;
+}
+
+:where(html, body, .scrollbar) {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.35) rgba(255, 255, 255, 0);
+}
+
+:where(html, body, .scrollbar)::-webkit-scrollbar {
+  width: 6px;
+}
+
+:where(html, body, .scrollbar)::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:where(html, body, .scrollbar)::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: rgba(148, 163, 184, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-clip: padding-box;
+  background-image: linear-gradient(to bottom,
+      rgba(203, 213, 225, 0.6),
+      rgba(148, 163, 184, 0.3),
+      rgba(203, 213, 225, 0.6));
+}
+
+/* contect's option */
+.glass-select {
+  color: rgba(248, 250, 252, 0.85);
+  background-color: #121214;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="%23cbd5f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 1.25rem center;
+  background-size: 1rem;
+  padding-right: 3.5rem;
+}
+
+.glass-select option {
+  color: #f8fafc ;
+  background-color: #121214;
+}
+
+.glass-select option:checked {
+  color: #e2e8f0;
+  background-color: #060606;
+}
