@@ -27,7 +27,7 @@ Designed to showcase my projects, skills, and journey as a web developer with a 
 
 ## 📸 Preview
 
-![Portfolio Preview](https://drive.google.com/file/d/1zI8CLjOSU7wevV6BYdGZ1TyVOdQmIJ9U/view?usp=sharing)
+![Portfolio Preview](https://lh3.googleusercontent.com/d/1zI8CLjOSU7wevV6BYdGZ1TyVOdQmIJ9U)
 
 ---
 
