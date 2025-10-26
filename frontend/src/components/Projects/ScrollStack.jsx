@@ -403,7 +403,7 @@ const ScrollStack = ({
 
   return (
     <div className={containerClassName} ref={scrollerRef} style={containerStyles}>
-  <div className="scroll-stack-inner pt-[12vh] md:pt-[16vh] lg:pt-[20vh] px-6 md:px-12 lg:px-20 pb-[28vh] min-h-screen">
+  <div className="scroll-stack-inner pt-[12vh] md:pt-[16vh] lg:pt-[20vh] px-6 md:px-12 lg:px-20 pb-100 min-h-screen">
         {children}
         {/* Spacer so the last pin can release cleanly */}
         <div className="scroll-stack-end w-full h-px" />
