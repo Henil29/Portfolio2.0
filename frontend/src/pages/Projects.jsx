@@ -1,100 +1,97 @@
 import ScrollStack, { ScrollStackItem } from '../components/Projects/ScrollStack'
 
-import project1 from "../assets/imgs/project1.avif";
-import project2 from "../assets/imgs/project2.avif";
-import project3 from "../assets/imgs/project3.avif";
+import project1 from "../assets/imgs/project1.png";
+import project2 from "../assets/imgs/project2.png";
+import project3 from "../assets/imgs/project3.png";
 
 const projects = [
     {
-        slug: "next-ventures",
-        title: "Next Ventures",
+        slug: "connectify",
+        title: "Connectify",
         tagline:
-            "A space for entrepreneurs to pitch ideas, explore others, and gain exposure with clean design",
+            "A social media platform to connect, share, and chat with people in real time.",
         summary:
-            "A platform designed for early-stage entrepreneurs to pitch, browse, and engage with startup ideas. Built to impress both users and investors with blazing speed, compelling visuals, and a modern tech stack.",
+            "Connectify is a full-stack social networking app built using the MERN stack. It allows users to create posts, like, comment, follow others, and chat instantly — all in a smooth, modern UI.",
         highlights: [
-            "Leveraged Partial Prerendering and After for faster loading.",
-            "Simplified idea submission with a clean, intuitive design.",
-            "Enhanced browsing with seamless performance optimization.",
+            "Implemented real-time chat and messaging using Socket.io.",
+            "Integrated JWT authentication and secure user sessions.",
+            "Built reusable React components for posts, profiles, and feed layout.",
+            "Optimized MongoDB queries for faster loading and feed updates.",
         ],
         tech: [
-            "Next.js",
             "React",
-            "Tailwind CSS",
-            "TypeScript",
-            "Motion.dev",
-            "Sanity CMS",
-            "Auth.js",
-            "Markdown",
-            "GROQ",
-            "Sentry",
-        ],
-        link: "https://aayushbharti.in/projects/next-ventures",
-        img: project1,
-        gradient:
-            "linear-gradient(135deg, rgba(221,94,137,0.95), rgba(247,187,151,0.85))",
-        accent: "#f472b6",
-    },
-    {
-        slug: "zenith-minds",
-        title: "Zenith Minds",
-        tagline:
-            "A platform connecting students and instructors for enhanced learning experiences",
-        summary:
-            "An education platform that unites learners and mentors through immersive projects, tailored courses, and community accountability. Designed to scale with a modern, resilient architecture.",
-        highlights: [
-            "Adaptive course journeys with Zustand and Zod validation.",
-            "Integrated MongoDB and REST APIs for collaborative learning.",
-            "Polished UI with Motion.dev and custom gradient themes.",
-        ],
-        tech: [
-            "Next.js",
-            "React",
-            "Tailwind CSS",
-            "TypeScript",
-            "Zustand",
-            "MongoDB",
             "Node.js",
             "Express.js",
-            "Motion.dev",
-            "Razorpay",
+            "MongoDB",
+            "Socket.io",
+            "JWT",
+            "Tailwind CSS",
+            "Resend (Mailer)",
+            "Cloudinary",
         ],
-        link: "https://aayushbharti.in/projects/zenith-minds",
-        img: project2,
+        link: "https://github.com/Henil29/Connectify",
+        img: project1,
         gradient:
-            "linear-gradient(135deg, rgba(76,106,255,0.92), rgba(166,85,255,0.88))",
-        accent: "#7dd3fc",
+            "linear-gradient(135deg, rgba(56,189,248,0.9), rgba(37,99,235,0.85))",
+        accent: "#60a5fa",
     },
     {
-        slug: "campus-connect",
-        title: "Campus Connect",
+        slug: "shopshere",
+        title: "ShopShere",
         tagline:
-            "A modern hub for managing campus events, communities, and announcements",
+            "A dynamic e-commerce web app for seamless online shopping experience.",
         summary:
-            "Campus Connect streamlines the college experience with event discovery, RSVPs, and cross-club collaboration in a single cohesive interface.",
+            "ShopShere is an e-commerce platform built using the MERN stack. It features product listings, cart management, user authentication.",
         highlights: [
-            "Server actions and edge caching for real-time event feeds.",
-            "Collaborative tools for managing schedules and volunteers.",
-            "Optimized accessibility and theming for dark mode browsing.",
+            "Implemented REST APIs with Express for product and user management.",
+            "Integrated JWT-based authentication and authorization.",
+            "Handled image uploads using Cloudinary for product images.",
+            "Designed UI with Tailwind CSS for optimal user experience.",
         ],
         tech: [
-            "Next.js",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "Tailwind CSS",
+            "Redux",
+            "Cloudinary",
+        ],
+        link: "https://github.com/Henil29/ShopShere",
+        img: project2,
+        gradient:
+            "linear-gradient(135deg, rgba(249,115,22,0.9), rgba(234,88,12,0.85))",
+        accent: "#fb923c",
+    },
+    {
+        slug: "k72",
+        title: "K72",
+        tagline:
+            "A modern, responsive website designed for a tech club to manage and showcase events.",
+        summary:
+            "k72 is a project built using React along with GSAP to implement rich animations and interactive UI elements.",
+        highlights: [
+            "Developed responsive UI optimized for both desktop and mobile.",
+            "Added smooth scroll and animations using Framer Motion.",
+            "Implemented event and project sections with modular card design.",
+            "Optimized for performance and SEO using modern React practices.",
+        ],
+        tech: [
             "React",
             "Tailwind CSS",
-            "TypeScript",
-            "Prisma",
-            "PlanetScale",
-            "Uploadcare",
-            "Lucide",
-            "Recharts",
+            "Framer Motion",
+            "GSAP",
+            "JavaScript",
         ],
-        link: "https://aayushbharti.in/projects/campus-connect",
+        link: "https://github.com/Henil29/K72",
         img: project3,
         gradient:
-            "linear-gradient(135deg, rgba(79,209,197,0.92), rgba(19,84,122,0.9))",
-        accent: "#5eead4",
+            "linear-gradient(135deg, rgba(168,85,247,0.9), rgba(59,130,246,0.85))",
+        accent: "#a78bfa",
     },
 ];
+
 
 const Projects = () => {
     return (
@@ -119,7 +116,7 @@ const Projects = () => {
                     >
                         <div className="relative flex h-full w-full flex-col gap-6 lg:flex-row lg:gap-12">
                             <div className="flex w-full flex-col gap-5 md:gap-6 lg:w-2/5 lg:justify-between">
-                                <div className="flex flex-col gap-4">    
+                                <div className="flex flex-col gap-4">
                                     <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
                                         {project.title}
                                     </h2>
