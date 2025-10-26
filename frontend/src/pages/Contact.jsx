@@ -187,7 +187,7 @@ const Contact = () => {
 									defaultValue='Flexible'
 									className='glass-select rounded-2xl border border-white/10 bg-white/5 px-4 pr-10 py-3 text-white/85 focus:border-white/30 focus:outline-none'
 								>
-									<option value='1-3 months' selected>1-3 months</option>
+									<option value='1-3 months'>1-3 months</option>
 									<option value='3-6 months'>3-6 months</option>
 									<option value='Flexible'>Flexible</option>
 								</select>

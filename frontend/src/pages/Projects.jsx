@@ -29,11 +29,11 @@ const projects = [
             "Resend (Mailer)",
             "Cloudinary",
         ],
-        link: "https://github.com/Henil29/Connectify",
+        github: "https://github.com/Henil29/Connectify",
+        live: "https://connectify.henilp.dev/",
         img: project1,
         gradient:
             "linear-gradient(135deg, rgba(56,189,248,0.9), rgba(37,99,235,0.85))",
-        accent: "#60a5fa",
     },
     {
         slug: "shopshere",
@@ -58,11 +58,11 @@ const projects = [
             "Redux",
             "Cloudinary",
         ],
-        link: "https://github.com/Henil29/ShopShere",
+        github: "https://github.com/Henil29/ShopShere",
+        live: "https://shopsphere.henilp.dev/",
         img: project2,
         gradient:
             "linear-gradient(135deg, rgba(249,115,22,0.9), rgba(234,88,12,0.85))",
-        accent: "#fb923c",
     },
     {
         slug: "k72",
@@ -84,11 +84,11 @@ const projects = [
             "GSAP",
             "JavaScript",
         ],
-        link: "https://github.com/Henil29/K72",
+        github: "https://github.com/Henil29/K72",
+        live: "https://k72.henilp.dev/",
         img: project3,
         gradient:
             "linear-gradient(135deg, rgba(168,85,247,0.9), rgba(59,130,246,0.85))",
-        accent: "#a78bfa",
     },
 ];
 
@@ -147,25 +147,42 @@ const Projects = () => {
                             </div>
                             <div className="flex w-full flex-col gap-5 md:gap-6 lg:w-3/5 lg:justify-between">
                                 <div className="flex flex-col gap-6 md:flex-row">
-                                    <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 aspect-16/10 sm:aspect-4/3 lg:aspect-auto lg:h-full">
+                                    <div className="relative flex w-full items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-black/30 aspect-16/10 sm:aspect-4/3 lg:aspect-auto lg:h-full">
+                                        <img
+                                            src={project.img}
+                                            alt={project.title}
+                                            className="h-full w-full object-contain"
+                                        />
+                                        <div
+                                            className="pointer-events-none absolute inset-0 bg-linear-to-br from-transparent to-black/40"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex w-full items-center gap-3 lg:pl-8 max-sm:justify-center max-sm:gap-2 max-sm:flex-nowrap">
+                                    {project.github && (
                                         <a
-                                            href={project.link}
-                                            className="block h-full w-full"
-                                            style={{ color: project.accent }}
+                                            href={project.github}
+                                            className="rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-black transition hover:bg-white whitespace-nowrap max-sm:px-4 max-sm:py-1.5 max-sm:text-xs"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <img
-                                                src={project.img}
-                                                alt={project.title}
-                                                className="h-full w-full object-cover"
-                                            />
-                                            <div
-                                                className="absolute inset-0 bg-linear-to-br from-transparent to-black/40"
-                                                style={{ borderColor: project.accent }}
-                                            />
+                                            View GitHub
                                         </a>
-                                    </div>
+                                    )}
+                                    {project.live ? (
+                                        <a
+                                            href={project.live}
+                                            className="rounded-full border border-white/80 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white/10 whitespace-nowrap max-sm:px-4 max-sm:py-1.5 max-sm:text-xs"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Live Demo
+                                        </a>
+                                    ) : (
+                                        <span className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white/50 whitespace-nowrap max-sm:px-4 max-sm:py-1.5 max-sm:text-xs cursor-not-allowed">
+                                            Live Demo • Coming Soon
+                                        </span>
+                                    )}
                                 </div>
                             </div>
                         </div>
