@@ -14,7 +14,7 @@ import {
     RiExternalLinkLine
 } from 'react-icons/ri';
 
-import resume from '../../assets/docs/HenilPatel_Resume.pdf'
+import resume from '../../assets/doc/HenilPatel_Resume.pdf'
 
 const svgs = [
     {
